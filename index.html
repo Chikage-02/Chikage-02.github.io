@@ -46,15 +46,33 @@
       border-radius: 999px;
       font-weight: bold;
     }
+    .fade-item {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeUp 1.5s ease forwards;
+}
+
+.fade-item:nth-child(1) { animation-delay: 0.2s; }
+.fade-item:nth-child(2) { animation-delay: 0.5s; }
+.fade-item:nth-child(3) { animation-delay: 0.8s; }
+.fade-item:nth-child(4) { animation-delay: 1.1s; }
+
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
   </style>
 </head>
 <body>
   <div class="container">
-    <img src="https://via.placeholder.com/120" alt="icon">
-    <h1>千影 零華</h1>
-    <img src="無題420_20251230220811.png">
-    <p>セルフ受肉<br>配信時間考え中<br>人見知り陰キャ</p>
-
+    <img src="https://via.placeholder.com/120" alt="icon" class="fade-item">
+    <h1class="fade-item">千影 零華</h1>
+    <img src="無題420_20251230220811.png" class="fade-item">
+    <p class="profile fade-item">セルフ受肉<br>配信時間考え中<br>人見知り陰キャ</p>
+<div class="links fade-item">
     <a href="https://x.com/@Chikage_02">X (Twitter)</a>
     <a href="https://www.tiktok.com/@chikage_chichan?_r=1&_t=ZS-92xTmmzAxwQ">Tiktok</a>
     <a href="https://web.iriam.app/s/user/D5xS8crdbM?uuid=01730adb">IRIAM</a>
