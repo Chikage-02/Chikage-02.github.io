@@ -75,26 +75,19 @@ h1 {
 }
 
 @keyframes pulse {
-  0% {
-    transform: scale(1);
-    text-shadow: 0 0 4px rgba(255, 0, 0, 0.4);
-  }
-  20% {
-    transform: scale(1.08);
-    text-shadow:
-      0 0 10px rgba(255, 0, 0, 0.8),
-      0 0 20px rgba(255, 0, 0, 0.4);
-  }
-  40% {
-    transform: scale(1);
-    text-shadow: 0 0 4px rgba(255, 0, 0, 0.4);
-  }
-  100% {
-    transform: scale(1);
-  }
+  0% { transform: scale(1); }
+
+  8% { transform: scale(1.18); }
+  16% { transform: scale(1); }
+
+  26% { transform: scale(1.12); }
+  34% { transform: scale(1); }
+
+  100% { transform: scale(1); }
 }
 .pulse-text {
   display: inline-block;
+  animation: pulse 3.2s ease-out infinite;
 }
 
   </style>
